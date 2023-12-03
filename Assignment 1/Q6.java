@@ -4,16 +4,22 @@ user and print their:
 (b) Product.
 (c) Difference.
 (d) Quotient. */
-import java.util.*;
+
+import java.util.Scanner;
 public class Q6{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Two Numbers: ");
         int x = sc.nextInt();
         int y = sc.nextInt();
-        if (x > y) System.out.println(x + " is larger");
-        else if (x > y) System.out.println(y + " is larger");
-        else System.out.println("These numbers are equal.");
+        int add = x + y;
+        int diff = x - y;
+        int mul = x * y;
+        double quo = x / y;
+        System.out.println("Sum: " + add);
+        System.out.println("Difference: " + diff);
+        System.out.println("Product: " + mul);
+        System.out.println("Quotient: " + quo);
         sc.close();
     }
 }
